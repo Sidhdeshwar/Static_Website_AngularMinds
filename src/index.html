@@ -1,485 +1,847 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Website</title>
-    <link href="/dist/output.css" rel="stylesheet">
-</head>
-<body>
- <!-- * navBar -->
- <div class=" shadow-xl fixed w-full z-50">
-    <nav class="border p-5 bg-white shadow md:flex md:items-center md:justify-between top-0">
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- * navBar -->
+    <div class="shadow-xl fixed w-full z-50">
+      <nav
+        class="border p-5 bg-white shadow md:flex md:items-center md:justify-between top-0"
+      >
         <div class="flex justify-between items-center">
-            <span>
-                <img class="h-10 inline ps-20 sm:ps-0" src="./../images/navbar/logo.svg" alt="">
-            </span>
-            <span class="md:hidden cursor-pointer"  onclick="menu100(this)" >
-                <img width="50" height="50" src="https://img.icons8.com/ios/50/menu-squared-2.png" alt="menu-squared-2"  />
-            </span>
+          <span>
+            <img
+              class="h-10 inline ps-20 sm:ps-0"
+              src="./../images/navbar/logo.svg"
+              alt=""
+            />
+          </span>
+          <span class="md:hidden cursor-pointer" onclick="menu100(this)">
+            <img
+              width="50"
+              height="50"
+              src="https://img.icons8.com/ios/50/menu-squared-2.png"
+              alt="menu-squared-2"
+            />
+          </span>
         </div>
         <div>
-            <ul class="md:flex md:items-center md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-200" style="height: 0px;">
-                <li class="mx-4 my-3 md:my-0"> <a href="#" class="text-sm hover:text-cyan-600 duration-500">Services</a> <select name="" id="" class="bg-white"></select></li>
-                <li class="mx-4 my-3 md:my-0"> <a href="#" class="text-sm hover:text-cyan-600 duration-500">Hire Resources</a> <select name="" id="" class="bg-white"></select></li>
-                <li class="px-4 my-3 md:my-0"> <a href="#" class="text-sm hover:text-cyan-600 duration-500">Portfolio</a></select></li>
-                <li class="px-4 my-3 md:my-0"> <a href="#" class="text-sm hover:text-cyan-600 duration-500">Company</a> <select name="" id="" class="bg-white"></select></li>
-                <li class="px-4 my-3 md:my-0"> <a href="#" class="text-sm hover:text-cyan-600 duration-500">Resources</a> <select name="" id="" class="bg-white"></select></li>
-                <li class="px-4 my-3 md:my-0"> <a href="#" class="text-sm hover:text-cyan-600 duration-500">Blog</a> </li>
-                <li class="px-4 my-3 md:my-0"> <a href="#" class="text-sm hover:text-cyan-600 duration-500">Contact</a> </li>
-                <button class=" bg-red-500 border text-white p-2 rounded me-20 px-4">Get in touch</button>
-              </ul>
+          <ul
+            class="md:flex md:items-center md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-200"
+            style="height: 0px"
+          >
+            <li class="mx-4 my-3 md:my-0">
+              <a href="#" class="text-sm hover:text-cyan-600 duration-500"
+                >Services</a
+              >
+              <select name="" id="" class="bg-white"></select>
+            </li>
+            <li class="mx-4 my-3 md:my-0">
+              <a href="#" class="text-sm hover:text-cyan-600 duration-500"
+                >Hire Resources</a
+              >
+              <select name="" id="" class="bg-white"></select>
+            </li>
+            <li class="px-4 my-3 md:my-0">
+              <a href="#" class="text-sm hover:text-cyan-600 duration-500"
+                >Portfolio</a
+              >
+            </li>
+            <li class="px-4 my-3 md:my-0">
+              <a href="#" class="text-sm hover:text-cyan-600 duration-500"
+                >Company</a
+              >
+              <select name="" id="" class="bg-white"></select>
+            </li>
+            <li class="px-4 my-3 md:my-0">
+              <a href="#" class="text-sm hover:text-cyan-600 duration-500"
+                >Resources</a
+              >
+              <select name="" id="" class="bg-white"></select>
+            </li>
+            <li class="px-4 my-3 md:my-0">
+              <a href="#" class="text-sm hover:text-cyan-600 duration-500"
+                >Blog</a
+              >
+            </li>
+            <li class="px-4 my-3 md:my-0">
+              <a href="#" class="text-sm hover:text-cyan-600 duration-500"
+                >Contact</a
+              >
+            </li>
+            <button class="bg-red-500 border text-white p-2 rounded me-20 px-4">
+              Get in touch
+            </button>
+          </ul>
         </div>
-   </nav>
- </div>
- <script>
-    var x = true;
-   function menu100(e)
-   {
-    let list = document.querySelector('ul');
-    x ? (list.classList.add('opacity-100'), list.style.height= '288px' ) : (list.classList.remove('opacity-100'), list.style.height= '0px');
-    x = !x;
-   } 
- </script>
- <!-- * navBar -->
- <!-- ^ White Space  -->
- <div class="h-20 md:h-0"></div>
- <div class="h-7"></div>
- <!-- ^ White Space  -->
- <!-- ? IMG BIG -->
- <div class="flex justify-center text-center" style="background-image: url('https://www.angularminds.com/site_data/images/hire-resources/banner-mean.jpg'); height: 400px;">
-    <div class="text-white w-7/12 text-base  md:pt-40  ">
-        <img class="h-16 inline" src="./../images/below-navbar/logo-mean.png"  alt="">
-        <div class="pt-3">
-            <h1 class="fill-yellow-900 text-4xl font-bold ">Hire MEAN Stack Developers</h1>
-        </div>
-        <div class="pt-5 text-xl">  
-            <p>Hire MEAN Stack developers from Angular Minds and build robust, maintainable and
-                fast production web applications using MEAN Stack development services.</p>
-        </div>
+      </nav>
     </div>
- </div>
-  <!-- ? IMG BIG -->
-   <!-- ^ White Space  -->
- <div class="h-7"></div>
- <!-- ^ White Space  -->
-<!-- *Hire MEAN Stack Developers for your Next Project -->
-<div class="container mx-auto">
-<div class="grid md:grid-cols-3 gap-2 ">
-    <!-- & Flex-1 -->
-    <div class="order-1" >
-        <h1 class="text-4xl font-bold"> Hire MEAN Stack Developers for your Next Project</h1>
-        <p class="text-slate-500 mt-2">Opening the door to a foster Web application development.</p>
-        <button class=" bg-red-500 border text-white p-2 rounded me-20 px-4 my-10">Lern More</button>
-       
-    </div>
-      <!-- & Flex-2 -->
-    <div class=" order-2" >
-        <div class="grid grid-cols-12">
-            <div class=" bg-blue-500 w-9 h-9 rounded-full text-white relative col-span-1"><div class="absolute bottom-0 text-xl left-2">✓</div></div>
-            <!-- <div class="bg-red-500 h-10 w-10 col-span-1"></div> -->
-            <div class="col-span-11">
-                <p  class="ms-2">We believe in Flexibility and MEAN Stack development helps in building simple and better apps easily.</p>
-            </div>
-        </div>
-        <div class="grid grid-cols-12 mt-7">
-            <div class=" bg-blue-500 w-9 h-9 rounded-full text-white relative"><div class="absolute bottom-0 text-xl left-2">✓</div></div>
-            <div class="col-span-11">
-                <p class="ms-2">Being a Leading MEAN Stack Application Development Company in India we have expert MEAN Stack developers and they work seamlessly for your apps.</p>
-            </div>
-        </div>
-        <div class="grid grid-cols-12 mt-7">
-            <div class=" bg-blue-500 w-9 h-9 rounded-full col-span-1 text-white relative"><div class="absolute bottom-0 text-xl left-2">✓</div></div>
-            <div class="col-span-11">
-                <p class="ms-2">The easiest way to build web application is MEAN Stack development. It helps to better the performance using MongoDB, Express JS, AngularJS and Node JS.</p>
-            </div>
-        </div>
-    </div>
-      <!-- & Flex-3 -->
-      <div class="order-3" >
-        <div class="grid grid-cols-12 ">
-            <div class=" bg-blue-500 w-9 h-9 rounded-full col-span-1 text-white relative"><div class="absolute bottom-0 text-xl left-2">✓</div></div>
-            <div class="col-span-11">
-                <p class="ms-2">Our MEAN Stack developers give their devotion to create powerful applications for the enterprise market.</p>
-            </div>
-        </div>
-        <div class="grid grid-cols-12 mt-7">
-            <div class=" bg-blue-500 w-9 h-9 rounded-full col-span-1 text-white relative"><div class="absolute bottom-0 text-xl left-2">✓</div></div>
-            <div class="col-span-11">
-                <p class="ms-2">MEAN Stack is built to meet the needs of today's business. MEAN Stack development is like a Big step for Beginning.</p>
-            </div>
-        </div>
-        <div class="grid grid-cols-12 mt-7">
-            <div class=" bg-blue-500 w-9 h-9 col-span-1 rounded-full text-white relative"><div class="absolute bottom-0 text-xl left-2">✓</div></div>
-            <div class="col-span-11">
-                <p class="ms-2">Our MEAN Stack developers are profoundly passionate about fullStack JavaScript. They are ready to take charge of your MEAN Stack project.</p>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-<!-- *Hire MEAN Stack Developers for your Next Project -->
-   <!-- ^ White Space  -->
-   <div class="h-7"></div>
-   <!-- ^ White Space  -->
-      <!-- ^ White Space  -->
- <div class="h-7"></div>
- <!-- ^ White Space  -->
- <!-- <div class="h-14 bg-gradient-to-r from-violet-500 to-fuchsia-500"></div> -->
- <!-- *MAN STANDING -->
- <div class="container mx-auto grid md:grid-cols-2">
-    <!-- 1 -->
-    <div class="relative " style="background-image: url('./../images/standing-man/work.jpg'); height: 535px;">
-        <div class="absolute bottom-4 left-20 right-20 bg-blue-500 p-5 rounded-bl-3xl rounded-tr-3xl opacity-60 ">
-            <h1 class="text-white font-bold text-3xl">HIRE</h1>
-            <p class="text-white text-lg">Angular Minds offers dedicated MEAN Stack developers
-                for hire on hourly, part-time or full-time contract basis.</p>
-        </div>
-    </div>
-    <!-- 2 -->
-<div>
-    <!-- 1 -->
-    <div class="grid md:grid-cols-2 ">
-        <div class="bg-blue-300 py-14 ps-3 me-1">
-            <h1 class="text-white text-2xl ">Lets Start With MEAN</h1>
-            <p class="text-white">MEAN Stack is easier to fit into Ionic for Mobile App Development. Hire MEAN Stack developers from us for custom mobile app development to get it done right.</p>
-        </div>
-        <div class="bg-blue-900 py-14 ps-3">
-            <h1 class="text-white text-2xl ">Lets Start With MEAN</h1>
-            <p class="text-white">MEAN Stack is easier to fit into Ionic for Mobile App Development. Hire MEAN Stack developers from us for custom mobile app development to get it done right.</p>
-        </div>
-    </div>
-    <!-- 2 -->
-    <div class="grid md:grid-cols-2">
-        <div class="bg-blue-900 py-14 ps-3 mt-1 me-1">
-            <h1 class="text-white text-2xl ">Lets Start With MEAN</h1>
-            <p class="text-white">MEAN Stack is easier to fit into Ionic for Mobile App Development. Hire MEAN Stack developers from us for custom mobile app development to get it done right.</p>
-        </div>
-        <div class=" bg-blue-300 py-14 ps-3 mt-1">
-            <h1 class="text-white text-2xl ">Lets Start With MEAN</h1>
-            <p class="text-white">MEAN Stack is easier to fit into Ionic for Mobile App Development. Hire MEAN Stack developers from us for custom mobile app development to get it done right.</p>
-        </div>
-    </div>
-</div>
-
- </div>
-  <!-- *MAN STANDING -->
-<!-- ^ White Space  -->
- <div class="h-7"></div>
- <!-- ^ White Space  -->
- <!-- ^ White Space  -->
- <div class="h-7"></div>
- <!-- ^ White Space  -->
-<div class="container mx-auto ms-5 md:ms-0">
-    <b class="text-4xl font-bold">Why Hire MEAN Stack Developers from Angular Minds</b>
+    <script>
+      var x = true;
+      function menu100(e) {
+        let list = document.querySelector("ul");
+        x
+          ? (list.classList.add("opacity-100"), (list.style.height = "288px"))
+          : (list.classList.remove("opacity-100"), (list.style.height = "0px"));
+        x = !x;
+      }
+    </script>
+    <!-- * navBar -->
     <!-- ^ White Space  -->
- <div class="h-7"></div>
- <!-- ^ White Space  -->
- <!-- ! 1111111 1st 3 -->
-<div class="grid md:grid-cols-3">
-    <div class="order-1">
-        <div class="flex">
-            <div class="h-10 w-10 rounded-full" style="background-image: url('./../images/common-6-files/spritesheet.png'); background-position: bottom;"></div>
-            <b class="text-lg ms-2">Scalable & Robust websites & apps </b>
+    <div class="h-20 md:h-0"></div>
+    <div class="h-7"></div>
+    <!-- ^ White Space  -->
+    <!-- ? IMG BIG -->
+    <div
+      class="flex justify-center text-center"
+      style="
+        background-image: url('https://www.angularminds.com/site_data/images/hire-resources/banner-mean.jpg');
+        height: 400px;
+      "
+    >
+      <div class="text-white w-7/12 text-base md:pt-40">
+        <img
+          class="h-16 inline"
+          src="./../images/below-navbar/logo-mean.png"
+          alt=""
+        />
+        <div class="pt-3">
+          <h1 class="fill-yellow-900 text-4xl font-bold">
+            Hire MEAN Stack Developers
+          </h1>
         </div>
-        <div>
-            <p>Angular Minds is Leading MEAN Stack Application Development Company. We are helping global businesses with our scalable & robust websites and apps.</p>
+        <div class="pt-5 text-xl">
+          <p>
+            Hire MEAN Stack developers from Angular Minds and build robust,
+            maintainable and fast production web applications using MEAN Stack
+            development services.
+          </p>
         </div>
+      </div>
     </div>
-    <div class="order-2">
-        <div class="flex">
-            <!-- <img src="./../images/common-6-files/spritesheet.png" alt=""> -->
-            <div class="h-10 w-10 rounded-full" style="background-image: url('./../images/common-6-files/spritesheet.png'); background-position: top"></div>
-            <b class="text-lg ms-2">Sound Technical knowledge </b>
-        </div>
-        <div>
-           <p>Make your MEAN Stack open source customization work more creative, unique and innovative by hiring our MEAN Stack developers. Our dedicated MEAN Stack developer's team is ready to work in any shift on timely basis. </p>
-        </div>
-    </div>
-    <div class="order-3">
-        <div class="flex">
-            <!-- <img src="./../images/common-6-files/spritesheet.png" alt=""> -->
-            <div class="h-10 w-10 rounded-full" style="background-image: url('./../images/common-6-files/spritesheet.png'); background-position: bottom left;"></div>
-            <b class="text-lg ms-2"> Daily reporting & Direct communication </b>
-        </div>
-        <div>
-         <p>Our MEAN Stack developers are well versed as well as written communication in English for daily reporting on project status. Still you have any issues, project managers can be contacted easily.</p>
-        </div>
-    </div>
-</div>
+    <!-- ? IMG BIG -->
     <!-- ^ White Space  -->
     <div class="h-7"></div>
     <!-- ^ White Space  -->
-    <!--! 2222222222 2nd 3 -->
-
-    <div class="grid md:grid-cols-3">
+    <!-- *Hire MEAN Stack Developers for your Next Project -->
+    <div class="container mx-auto">
+      <div class="grid md:grid-cols-3 gap-2">
+        <!-- & Flex-1 -->
         <div class="order-1">
-            <div class="flex">
-                <!-- <img src="./../images/common-6-files/spritesheet.png" alt=""> -->
-                <div class="h-10 w-10 rounded-full" style="background-image: url('./../images/common-6-files/spritesheet.png'); background-position: bottom right;"></div>
-                <b class="text-lg ms-2">Cost effective solution</b>
-            </div>
-            <div>
-               <p>You don't need to spend thousands of dollars for your requirements. We provide MEAN Stack solutions and applications in your budget.               </p>
-            </div>
+          <h1 class="text-4xl font-bold">
+            Hire MEAN Stack Developers for your Next Project
+          </h1>
+          <p class="text-slate-500 mt-2">
+            Opening the door to a foster Web application development.
+          </p>
+          <button
+            class="bg-red-500 border text-white p-2 rounded me-20 px-4 my-10"
+          >
+            Lern More
+          </button>
         </div>
+        <!-- & Flex-2 -->
         <div class="order-2">
-            <div class="flex">
-                <!-- <img src="./../images/common-6-files/spritesheet.png" alt=""> -->
-                <div class="h-10 w-10 rounded-full" style="background-image: url('./../images/common-6-files/spritesheet.png'); background-position: top right;"></div>
-                <b class="text-lg ms-2">Flexible hiring models </b>
+          <div class="grid grid-cols-12">
+            <div
+              class="bg-blue-500 w-9 h-9 rounded-full text-white relative col-span-1"
+            >
+              <div class="absolute bottom-0 text-xl left-2">✓</div>
             </div>
-            <div>
-               <p>Hire our MEAN Stack developers as per your project requirements and convenient work pattern. For more details go through our Business Engagement Models. </p>
+            <!-- <div class="bg-red-500 h-10 w-10 col-span-1"></div> -->
+            <div class="col-span-11">
+              <p class="ms-2">
+                We believe in Flexibility and MEAN Stack development helps in
+                building simple and better apps easily.
+              </p>
             </div>
+          </div>
+          <div class="grid grid-cols-12 mt-7">
+            <div class="bg-blue-500 w-9 h-9 rounded-full text-white relative">
+              <div class="absolute bottom-0 text-xl left-2">✓</div>
+            </div>
+            <div class="col-span-11">
+              <p class="ms-2">
+                Being a Leading MEAN Stack Application Development Company in
+                India we have expert MEAN Stack developers and they work
+                seamlessly for your apps.
+              </p>
+            </div>
+          </div>
+          <div class="grid grid-cols-12 mt-7">
+            <div
+              class="bg-blue-500 w-9 h-9 rounded-full col-span-1 text-white relative"
+            >
+              <div class="absolute bottom-0 text-xl left-2">✓</div>
+            </div>
+            <div class="col-span-11">
+              <p class="ms-2">
+                The easiest way to build web application is MEAN Stack
+                development. It helps to better the performance using MongoDB,
+                Express JS, AngularJS and Node JS.
+              </p>
+            </div>
+          </div>
         </div>
+        <!-- & Flex-3 -->
         <div class="order-3">
-            <div class="flex">
-                <!-- <img src="./../images/common-6-files/spritesheet.png" alt=""> -->
-                <div class="h-10 w-10 rounded-full" style="background-image: url('./../images/common-6-files/spritesheet.png');"></div>
-                <b class="text-lg ms-2"> Years of Experience </b>
+          <div class="grid grid-cols-12">
+            <div
+              class="bg-blue-500 w-9 h-9 rounded-full col-span-1 text-white relative"
+            >
+              <div class="absolute bottom-0 text-xl left-2">✓</div>
             </div>
-            <div>
-             <p>Being top MEAN Stack Development Company in India, we have delivered MEAN Stack Services and solutions by enabling customers to turn into high performance business units.</p>
+            <div class="col-span-11">
+              <p class="ms-2">
+                Our MEAN Stack developers give their devotion to create powerful
+                applications for the enterprise market.
+              </p>
             </div>
+          </div>
+          <div class="grid grid-cols-12 mt-7">
+            <div
+              class="bg-blue-500 w-9 h-9 rounded-full col-span-1 text-white relative"
+            >
+              <div class="absolute bottom-0 text-xl left-2">✓</div>
+            </div>
+            <div class="col-span-11">
+              <p class="ms-2">
+                MEAN Stack is built to meet the needs of today's business. MEAN
+                Stack development is like a Big step for Beginning.
+              </p>
+            </div>
+          </div>
+          <div class="grid grid-cols-12 mt-7">
+            <div
+              class="bg-blue-500 w-9 h-9 col-span-1 rounded-full text-white relative"
+            >
+              <div class="absolute bottom-0 text-xl left-2">✓</div>
+            </div>
+            <div class="col-span-11">
+              <p class="ms-2">
+                Our MEAN Stack developers are profoundly passionate about
+                fullStack JavaScript. They are ready to take charge of your MEAN
+                Stack project.
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-<!-- & 2nd last  -->
-   <!-- ^ White Space  -->
-   <div class="h-7"></div>
-   <!-- ^ White Space  -->
+    <!-- *Hire MEAN Stack Developers for your Next Project -->
+    <!-- ^ White Space  -->
+    <div class="h-7"></div>
+    <!-- ^ White Space  -->
+    <!-- ^ White Space  -->
+    <div class="h-7"></div>
+    <!-- ^ White Space  -->
+    <!-- <div class="h-14 bg-gradient-to-r from-violet-500 to-fuchsia-500"></div> -->
+    <!-- *MAN STANDING -->
+    <div class="container mx-auto grid md:grid-cols-2">
+      <!-- 1 -->
+      <div
+        class="relative"
+        style="
+          background-image: url('./../images/standing-man/work.jpg');
+          height: 535px;
+        "
+      >
+        <div
+          class="absolute bottom-4 left-20 right-20 bg-blue-500 p-5 rounded-bl-3xl rounded-tr-3xl opacity-60"
+        >
+          <h1 class="text-white font-bold text-3xl">HIRE</h1>
+          <p class="text-white text-lg">
+            Angular Minds offers dedicated MEAN Stack developers for hire on
+            hourly, part-time or full-time contract basis.
+          </p>
+        </div>
+      </div>
+      <!-- 2 -->
+      <div>
+        <!-- 1 -->
+        <div class="grid md:grid-cols-2">
+          <div class="bg-blue-300 py-14 ps-3 me-1">
+            <h1 class="text-white text-2xl">Lets Start With MEAN</h1>
+            <p class="text-white">
+              MEAN Stack is easier to fit into Ionic for Mobile App Development.
+              Hire MEAN Stack developers from us for custom mobile app
+              development to get it done right.
+            </p>
+          </div>
+          <div class="bg-blue-900 py-14 ps-3">
+            <h1 class="text-white text-2xl">Lets Start With MEAN</h1>
+            <p class="text-white">
+              MEAN Stack is easier to fit into Ionic for Mobile App Development.
+              Hire MEAN Stack developers from us for custom mobile app
+              development to get it done right.
+            </p>
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="grid md:grid-cols-2">
+          <div class="bg-blue-900 py-14 ps-3 mt-1 me-1">
+            <h1 class="text-white text-2xl">Lets Start With MEAN</h1>
+            <p class="text-white">
+              MEAN Stack is easier to fit into Ionic for Mobile App Development.
+              Hire MEAN Stack developers from us for custom mobile app
+              development to get it done right.
+            </p>
+          </div>
+          <div class="bg-blue-300 py-14 ps-3 mt-1">
+            <h1 class="text-white text-2xl">Lets Start With MEAN</h1>
+            <p class="text-white">
+              MEAN Stack is easier to fit into Ionic for Mobile App Development.
+              Hire MEAN Stack developers from us for custom mobile app
+              development to get it done right.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- *MAN STANDING -->
+    <!-- ^ White Space  -->
+    <div class="h-7"></div>
+    <!-- ^ White Space  -->
+    <!-- ^ White Space  -->
+    <div class="h-7"></div>
+    <!-- ^ White Space  -->
+    <div class="container mx-auto ms-5 md:ms-0">
+      <b class="text-4xl font-bold"
+        >Why Hire MEAN Stack Developers from Angular Minds</b
+      >
       <!-- ^ White Space  -->
       <div class="h-7"></div>
       <!-- ^ White Space  -->
-<div class="bg-blue-100">
-<div class="container mx-auto">
-     <!-- ^ White Space  -->
-     <div class="h-7"></div>
-     <!-- ^ White Space  -->
-<!-- * -->
-<div class="grid grid-flow-row-dense md:grid-cols-3 gap-5">
-    <div class="col-span-2">
-        <div class="ms-5 md:ms-0">
-            <h1 class="text-4xl font-bold ">Frequently Asked Questions </h1>
-     <!-- ^ White Space  -->
-     <div class="h-7"></div>
-     <!-- ^ White Space  -->
-<div class="flex border-b border-gray-400 border-dashed">
-    <div class="bg-blue-500 h-5 w-5 rounded-full relative"><div class="absolute text-white left-1 top-0 font-bold text-lg">+</div> </div>
-    <div class="ms-2 pb-2 "><p>Where is Angular Minds based in? What is the team-strength?</p></div>
-</div>
-<div class="flex border-b border-gray-400 border-dashed mt-1">
-    <div class="bg-blue-500 h-5 w-5 rounded-full relative"><div class="absolute text-white left-1 top-0 font-bold text-lg">+</div> </div>
-    <div class="ms-2 pb-2"><p>Why to choose angular Minds for hiring MEAN Stack resources?</p></div>
-</div>
-<div class="flex border-b border-gray-400 border-dashed mt-1">
-    <div class="bg-blue-500 h-5 w-5 rounded-full relative"><div class="absolute text-white left-1 top-0 font-bold text-lg">+</div> </div>
-    <div class="ms-2 pb-2"><p>What is the process of hiring MEAN Stack resources?</p></div>
-</div>
-<div class="flex border-b border-gray-400 border-dashed mt-1">
-    <div class="bg-blue-500 h-5 w-5 rounded-full relative"><div class="absolute text-white left-1 top-0 font-bold text-lg">+</div> </div>
-    <div class="ms-2 pb-2"><p>Do you have other dedicated resources to hire?</p></div>
-</div>
-<div class="flex border-b border-gray-400 border-dashed mt-1">
-    <div class="bg-blue-500 h-5 w-5 rounded-full relative"><div class="absolute text-white left-1 top-0 font-bold text-lg">+</div> </div>
-    <div class="ms-2 pb-2"><p>How absolute is my ownership?</p></div>
-</div>
-<div class="flex border-b border-gray-400 border-dashed mt-1">
-    <div class="bg-blue-500 h-5 w-5 rounded-full relative"><div class="absolute text-white left-1 top-0 font-bold text-lg">+</div> </div>
-    <div class="ms-2 pb-2"><p>Do you have service level agreement in place?</p></div>
-</div>
+      <!-- ! 1111111 1st 3 -->
+      <div class="grid md:grid-cols-3">
+        <div class="order-1">
+          <div class="flex">
+            <div
+              class="h-10 w-10 rounded-full"
+              style="
+                background-image: url('./../images/common-6-files/spritesheet.png');
+                background-position: bottom;
+              "
+            ></div>
+            <b class="text-lg ms-2">Scalable & Robust websites & apps </b>
+          </div>
+          <div>
+            <p>
+              Angular Minds is Leading MEAN Stack Application Development
+              Company. We are helping global businesses with our scalable &
+              robust websites and apps.
+            </p>
+          </div>
         </div>
-    </div>
-    <!--2 Part  -->
-    <div>
-        <div class="ms-5 md:ms-0"><h1 class="text-2xl font-semibold mb-2 ">Client reviews </h1></div>
-        <img src="./../images/Client-review/quote-testimoloals-new3.png" alt="">
-        <div class="m-3 px-3 bg-white py-4 border rounded-lg">
-          <p>Angular Minds team was able to complete our project within the deadline and budget we had set for this project, I do have a good feeling with Angular Minds team's commitment, background, skill set and experience. Others would also benefit having Angular Minds team for their technology related projects</p>
-          <p class="text-right">-Naveen Tahilani,</p>
-          <p class="text-right">Director, Bridgekrone Online Pvt. Ltd.</p>
+        <div class="order-2">
+          <div class="flex">
+            <!-- <img src="./../images/common-6-files/spritesheet.png" alt=""> -->
+            <div
+              class="h-10 w-10 rounded-full"
+              style="
+                background-image: url('./../images/common-6-files/spritesheet.png');
+                background-position: top;
+              "
+            ></div>
+            <b class="text-lg ms-2">Sound Technical knowledge </b>
+          </div>
+          <div>
+            <p>
+              Make your MEAN Stack open source customization work more creative,
+              unique and innovative by hiring our MEAN Stack developers. Our
+              dedicated MEAN Stack developer's team is ready to work in any
+              shift on timely basis.
+            </p>
+          </div>
         </div>
+        <div class="order-3">
+          <div class="flex">
+            <!-- <img src="./../images/common-6-files/spritesheet.png" alt=""> -->
+            <div
+              class="h-10 w-10 rounded-full"
+              style="
+                background-image: url('./../images/common-6-files/spritesheet.png');
+                background-position: bottom left;
+              "
+            ></div>
+            <b class="text-lg ms-2"> Daily reporting & Direct communication </b>
+          </div>
+          <div>
+            <p>
+              Our MEAN Stack developers are well versed as well as written
+              communication in English for daily reporting on project status.
+              Still you have any issues, project managers can be contacted
+              easily.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- ^ White Space  -->
+      <div class="h-7"></div>
+      <!-- ^ White Space  -->
+      <!--! 2222222222 2nd 3 -->
+
+      <div class="grid md:grid-cols-3">
+        <div class="order-1">
+          <div class="flex">
+            <!-- <img src="./../images/common-6-files/spritesheet.png" alt=""> -->
+            <div
+              class="h-10 w-10 rounded-full"
+              style="
+                background-image: url('./../images/common-6-files/spritesheet.png');
+                background-position: bottom right;
+              "
+            ></div>
+            <b class="text-lg ms-2">Cost effective solution</b>
+          </div>
+          <div>
+            <p>
+              You don't need to spend thousands of dollars for your
+              requirements. We provide MEAN Stack solutions and applications in
+              your budget.
+            </p>
+          </div>
+        </div>
+        <div class="order-2">
+          <div class="flex">
+            <!-- <img src="./../images/common-6-files/spritesheet.png" alt=""> -->
+            <div
+              class="h-10 w-10 rounded-full"
+              style="
+                background-image: url('./../images/common-6-files/spritesheet.png');
+                background-position: top right;
+              "
+            ></div>
+            <b class="text-lg ms-2">Flexible hiring models </b>
+          </div>
+          <div>
+            <p>
+              Hire our MEAN Stack developers as per your project requirements
+              and convenient work pattern. For more details go through our
+              Business Engagement Models.
+            </p>
+          </div>
+        </div>
+        <div class="order-3">
+          <div class="flex">
+            <!-- <img src="./../images/common-6-files/spritesheet.png" alt=""> -->
+            <div
+              class="h-10 w-10 rounded-full"
+              style="
+                background-image: url('./../images/common-6-files/spritesheet.png');
+              "
+            ></div>
+            <b class="text-lg ms-2"> Years of Experience </b>
+          </div>
+          <div>
+            <p>
+              Being top MEAN Stack Development Company in India, we have
+              delivered MEAN Stack Services and solutions by enabling customers
+              to turn into high performance business units.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-  
-<!-- * -->
+    <!-- & 2nd last  -->
+    <!-- ^ White Space  -->
+    <div class="h-7"></div>
+    <!-- ^ White Space  -->
+    <!-- ^ White Space  -->
+    <div class="h-7"></div>
+    <!-- ^ White Space  -->
+    <div class="bg-blue-100">
+      <div class="container mx-auto">
+        <!-- ^ White Space  -->
+        <div class="h-7"></div>
+        <!-- ^ White Space  -->
+        <!-- * -->
+        <div class="grid grid-flow-row-dense md:grid-cols-3 gap-5">
+          <div class="col-span-2">
+            <div class="ms-5 md:ms-0">
+              <h1 class="text-4xl font-bold">Frequently Asked Questions</h1>
+              <!-- ^ White Space  -->
+              <div class="h-7"></div>
+              <!-- ^ White Space  -->
+              <div class="flex border-b border-gray-400 border-dashed">
+                <div class="bg-blue-500 h-5 w-5 rounded-full relative">
+                  <div
+                    class="absolute text-white left-1 top-0 font-bold text-lg"
+                  >
+                    +
+                  </div>
+                </div>
+                <div class="ms-2 pb-2">
+                  <p>
+                    Where is Angular Minds based in? What is the team-strength?
+                  </p>
+                </div>
+              </div>
+              <div class="flex border-b border-gray-400 border-dashed mt-1">
+                <div class="bg-blue-500 h-5 w-5 rounded-full relative">
+                  <div
+                    class="absolute text-white left-1 top-0 font-bold text-lg"
+                  >
+                    +
+                  </div>
+                </div>
+                <div class="ms-2 pb-2">
+                  <p>
+                    Why to choose angular Minds for hiring MEAN Stack resources?
+                  </p>
+                </div>
+              </div>
+              <div class="flex border-b border-gray-400 border-dashed mt-1">
+                <div class="bg-blue-500 h-5 w-5 rounded-full relative">
+                  <div
+                    class="absolute text-white left-1 top-0 font-bold text-lg"
+                  >
+                    +
+                  </div>
+                </div>
+                <div class="ms-2 pb-2">
+                  <p>What is the process of hiring MEAN Stack resources?</p>
+                </div>
+              </div>
+              <div class="flex border-b border-gray-400 border-dashed mt-1">
+                <div class="bg-blue-500 h-5 w-5 rounded-full relative">
+                  <div
+                    class="absolute text-white left-1 top-0 font-bold text-lg"
+                  >
+                    +
+                  </div>
+                </div>
+                <div class="ms-2 pb-2">
+                  <p>Do you have other dedicated resources to hire?</p>
+                </div>
+              </div>
+              <div class="flex border-b border-gray-400 border-dashed mt-1">
+                <div class="bg-blue-500 h-5 w-5 rounded-full relative">
+                  <div
+                    class="absolute text-white left-1 top-0 font-bold text-lg"
+                  >
+                    +
+                  </div>
+                </div>
+                <div class="ms-2 pb-2">
+                  <p>How absolute is my ownership?</p>
+                </div>
+              </div>
+              <div class="flex border-b border-gray-400 border-dashed mt-1">
+                <div class="bg-blue-500 h-5 w-5 rounded-full relative">
+                  <div
+                    class="absolute text-white left-1 top-0 font-bold text-lg"
+                  >
+                    +
+                  </div>
+                </div>
+                <div class="ms-2 pb-2">
+                  <p>Do you have service level agreement in place?</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--2 Part  -->
+          <div>
+            <div class="ms-5 md:ms-0">
+              <h1 class="text-2xl font-semibold mb-2">Client reviews</h1>
+            </div>
+            <img
+              src="./../images/Client-review/quote-testimoloals-new3.png"
+              alt=""
+            />
+            <div class="m-3 px-3 bg-white py-4 border rounded-lg">
+              <p>
+                Angular Minds team was able to complete our project within the
+                deadline and budget we had set for this project, I do have a
+                good feeling with Angular Minds team's commitment, background,
+                skill set and experience. Others would also benefit having
+                Angular Minds team for their technology related projects
+              </p>
+              <p class="text-right">-Naveen Tahilani,</p>
+              <p class="text-right">Director, Bridgekrone Online Pvt. Ltd.</p>
+            </div>
+          </div>
+        </div>
 
-</div>
-     <!-- ^ White Space  -->
-     <div class="h-7"></div>
-     <!-- ^ White Space  -->
-</div>
+        <!-- * -->
+      </div>
+      <!-- ^ White Space  -->
+      <div class="h-7"></div>
+      <!-- ^ White Space  -->
+    </div>
 
-<!-- ? LAST Blue Bar -->
-<div class="bg-blue-500">
-   <div class="grid grid-flow-row-dense md:grid-cols-12 py-20 text-white container mx-auto">
-       <div class="col-span-9">
-        <h1 class="text-2xl font-bold text-center ">Looking for mean stack development services? We are a leading Mean Stack Development Company offers MongoDB, ExpressJS, AngularJS, NodeJS</h1>
-       </div>
-       <div class="md:col-span-3 sm:mt-6 sm:flex  sm:col-span-12 justify-center text-center"> <button class=" bg-white border text-gray-700 p-2 rounded me-20 px-4">Start a Discussion</button></div>
-   </div>
-</div>
-<!-- ?LAst Blue Bar -->
-<!-- * BLACK FOOTER -->
-<div class="bg-gray-800">
-    <div class="h-10"></div>
-    <div class="container mx-auto grid md:grid-cols-12">
+    <!-- ? LAST Blue Bar -->
+    <div class="bg-blue-500">
+      <div
+        class="grid grid-flow-row-dense md:grid-cols-12 py-20 text-white container mx-auto"
+      >
+        <div class="col-span-9">
+          <h1 class="text-2xl font-bold text-center">
+            Looking for mean stack development services? We are a leading Mean
+            Stack Development Company offers MongoDB, ExpressJS, AngularJS,
+            NodeJS
+          </h1>
+        </div>
+        <div
+          class="md:col-span-3 sm:mt-6 sm:flex sm:col-span-12 justify-center text-center"
+        >
+          <button class="bg-white border text-gray-700 p-2 rounded me-20 px-4">
+            Start a Discussion
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- ?LAst Blue Bar -->
+    <!-- * BLACK FOOTER -->
+    <div class="bg-gray-800">
+      <div class="h-10"></div>
+      <div class="container mx-auto grid md:grid-cols-12">
         <!-- ^1 Company -->
         <div class="md:col-span-2 ps-4 col-span-12">
-            <div class="text-white">Company</div>
-            <ul class="text-slate-400 text-sm">
-                <li>About Us</li>
-                <li>Portfolio</li>
-                <li>Engagement Model</li>
-                <li>Partner With Us</li>
-                <li>Blog</li>
-                <li>Contact Us</li>
-            </ul>
+          <div class="text-white">Company</div>
+          <ul class="text-slate-400 text-sm">
+            <li>About Us</li>
+            <li>Portfolio</li>
+            <li>Engagement Model</li>
+            <li>Partner With Us</li>
+            <li>Blog</li>
+            <li>Contact Us</li>
+          </ul>
         </div>
-              <!-- ^2 Web Development -->
-              <div class="mt-7 md:col-span-2 md:mt-0 ps-4 col-span-12 ">
-                <div class="text-white">Web Development</div>
-                <ul class="text-slate-400 text-sm">
-                    <li> AngularJS Development</li>
-                    <li>Node JS Development</li>
-                    <li>ReactJS Development</li>
-                    <li>VueJS Development</li>
-                    <li>AWS Cloud Consulting</li>
-                    <li>IOT App Development</li>
-                    <li>MEAN Stack Development</li>
-                </ul>
-            </div>
-     <!-- ^3 Mobile Development -->
-     <div class="mt-7 md:col-span-2 md:mt-0 ps-4 col-span-12 ">
-        <div class="text-white">Mobile Development</div>
-        <ul class="text-slate-400 text-sm">
-    <li>Flutter App Development</li>
-    <li>Ionic App Development</li>
-    <li>Native App Development</li>
-    <li>PWA App Development</li>
-    <li>Firebase Development</li>
-    <li>Android Development</li>
-    <li>iOS App Development</li>
-    <li>Mobile App Development</li>
-        </ul>
-    </div>
-              <!-- ^4 Hire Developers -->
-              <div class="mt-7 md:col-span-2 ps-4 col-span-12 md:mt-0">
-                <div class="text-white">Hire Developers</div>
-                <ul class="text-slate-400 text-sm">
-                 <li>Hire AngularJS Developers</li>
-                 <li>Hire NodeJS Developers</li>
-                 <li>Hire Flutter Developers</li>
-                 <li>Hire ReactJS Developers                </li>
-                 <li>Hire Native Developers</li>
-                 <li>Hire VueJS Developers</li>
-                 <li>Hire Full Stack Devlopers</li>
-                 <li>Hire Ionic Devlopers</li>
-                </ul>
-            </div>
-            <!-- * OFFICE  -->
-        <div class=" sm:mt-7 col-span-4 md:border-l-2 md:mt-0">
-           <div class="ms-4">
+        <!-- ^2 Web Development -->
+        <div class="mt-7 md:col-span-2 md:mt-0 ps-4 col-span-12">
+          <div class="text-white">Web Development</div>
+          <ul class="text-slate-400 text-sm">
+            <li>AngularJS Development</li>
+            <li>Node JS Development</li>
+            <li>ReactJS Development</li>
+            <li>VueJS Development</li>
+            <li>AWS Cloud Consulting</li>
+            <li>IOT App Development</li>
+            <li>MEAN Stack Development</li>
+          </ul>
+        </div>
+        <!-- ^3 Mobile Development -->
+        <div class="mt-7 md:col-span-2 md:mt-0 ps-4 col-span-12">
+          <div class="text-white">Mobile Development</div>
+          <ul class="text-slate-400 text-sm">
+            <li>Flutter App Development</li>
+            <li>Ionic App Development</li>
+            <li>Native App Development</li>
+            <li>PWA App Development</li>
+            <li>Firebase Development</li>
+            <li>Android Development</li>
+            <li>iOS App Development</li>
+            <li>Mobile App Development</li>
+          </ul>
+        </div>
+        <!-- ^4 Hire Developers -->
+        <div class="mt-7 md:col-span-2 ps-4 col-span-12 md:mt-0">
+          <div class="text-white">Hire Developers</div>
+          <ul class="text-slate-400 text-sm">
+            <li>Hire AngularJS Developers</li>
+            <li>Hire NodeJS Developers</li>
+            <li>Hire Flutter Developers</li>
+            <li>Hire ReactJS Developers</li>
+            <li>Hire Native Developers</li>
+            <li>Hire VueJS Developers</li>
+            <li>Hire Full Stack Devlopers</li>
+            <li>Hire Ionic Devlopers</li>
+          </ul>
+        </div>
+        <!-- * OFFICE  -->
+        <div class="sm:mt-7 col-span-4 md:border-l-2 md:mt-0">
+          <div class="ms-4">
             <h1 class="text-white">Office</h1>
             <ul class="text-slate-400 text-sm">
-                <li>
-                    <p>5th Floor, Sai Shilp Business Centre</p>
-                    <p>Sr. No. 79, Balewadi Phata, Baner Rd,</p>
-                    <p>Pune, Maharashtra 411045</p>
-                </li>
-                <li class="mt-2 flex">
-                     <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/new-post.png" alt="new-post"/> 
-                    <div class="ms-2 mt-1"> sales@angularminds.com </div>
-                </li>
-                <li class="flex">
-                    <div>
-                        <img width="25" height="25" src="https://img.icons8.com/ios/50/phone--v1.png" alt="phone--v1"/> 
-                    </div>
-                    <!-- * IND -->
-                    <div class="ms-2">
-                        <img width="25" height="25" src="https://img.icons8.com/emoji/48/india-emoji.png" alt="india-emoji"/>
-                    </div>
-                    <div>
-                        +91 8956951584 
-                    </div>
-                    <!-- * AUS -->
-                    <div class="ms-2">
-                        <img width="25" height="25" src="https://img.icons8.com/emoji/48/us-outlying-islands-emoji.png" alt="us-outlying-islands-emoji"/>
-                    </div>
-                    <div>
-                        +1 (619) 752 3485
-                    </div>
-                </li>
-                <li> <img src="./../images/navbar/gray-logo.png" alt=""> 
-                </li>
-                <li class="flex cursor-pointer">
-                    <div >
-                        <img width="30" height="30" src="https://img.icons8.com/color/48/facebook-new.png" alt="facebook-new"/>
-                    </div class="ms-1 mt-1">
-                    <div class="ms-1 mt-1">
-                        <img width="30  " height="30" src="https://img.icons8.com/color/48/twitter-circled--v1.png" alt="twitter-circled--v1"/>
-                    </div>
-                    <div class="ms-1 mt-1">
-                        <img width="30" height="30" src="https://img.icons8.com/color/48/linkedin-circled--v1.png" alt="linkedin-circled--v1"/>
-                    </div>
-                    <div class="ms-1 mt-1">
-                        <img width="30" height="30" src="https://img.icons8.com/color/48/pinterest--v1.png" alt="pinterest--v1"/>
-                    </div>
-                    <div class="ms-1 mt-1">
-                        <img width="30" height="30" src="https://img.icons8.com/ios-filled/50/circled-m.png" alt="circled-m"/>
-                    </div>
-                    <div class="ms-1 mt-1">
-                        <img width="30" height="30" src="https://img.icons8.com/doodle/48/youtube--v1.png" alt="youtube--v1"/>
-                    </div>
-                    <div class="ms-1 mt-1">
-                        <img width="30" height="30" src="https://img.icons8.com/bubbles/50/instagram-new--v2.png" alt="instagram-new--v2"/>
-                    </div>
-                    <div class="ms-1 mt-1">
-                        <img width="30" height="30" src="https://img.icons8.com/doodle/48/dribbble-old-logo.png" alt="dribbble-old-logo"/>
-                    </div>
-                </li>
-               </ul>
-           </div>
+              <li>
+                <p>5th Floor, Sai Shilp Business Centre</p>
+                <p>Sr. No. 79, Balewadi Phata, Baner Rd,</p>
+                <p>Pune, Maharashtra 411045</p>
+              </li>
+              <li class="mt-2 flex">
+                <img
+                  width="30"
+                  height="30"
+                  src="https://img.icons8.com/ios-glyphs/30/new-post.png"
+                  alt="new-post"
+                />
+                <div class="ms-2 mt-1">sales@angularminds.com</div>
+              </li>
+              <li class="flex">
+                <div>
+                  <img
+                    width="25"
+                    height="25"
+                    src="https://img.icons8.com/ios/50/phone--v1.png"
+                    alt="phone--v1"
+                  />
+                </div>
+                <!-- * IND -->
+                <div class="ms-2">
+                  <img
+                    width="25"
+                    height="25"
+                    src="https://img.icons8.com/emoji/48/india-emoji.png"
+                    alt="india-emoji"
+                  />
+                </div>
+                <div>+91 8956951584</div>
+                <!-- * AUS -->
+                <div class="ms-2">
+                  <img
+                    width="25"
+                    height="25"
+                    src="https://img.icons8.com/emoji/48/us-outlying-islands-emoji.png"
+                    alt="us-outlying-islands-emoji"
+                  />
+                </div>
+                <div>+1 (619) 752 3485</div>
+              </li>
+              <li><img src="./../images/navbar/gray-logo.png" alt="" /></li>
+              <li class="flex cursor-pointer">
+                <div class="ms-1 mt-1">
+                  <img
+                    width="30"
+                    height="30"
+                    src="https://img.icons8.com/color/48/facebook-new.png"
+                    alt="facebook-new"
+                  />
+                </div>
+                <div class="ms-1 mt-1">
+                  <img
+                    width="30  "
+                    height="30"
+                    src="https://img.icons8.com/color/48/twitter-circled--v1.png"
+                    alt="twitter-circled--v1"
+                  />
+                </div>
+                <div class="ms-1 mt-1">
+                  <img
+                    width="30"
+                    height="30"
+                    src="https://img.icons8.com/color/48/linkedin-circled--v1.png"
+                    alt="linkedin-circled--v1"
+                  />
+                </div>
+                <div class="ms-1 mt-1">
+                  <img
+                    width="30"
+                    height="30"
+                    src="https://img.icons8.com/color/48/pinterest--v1.png"
+                    alt="pinterest--v1"
+                  />
+                </div>
+                <div class="ms-1 mt-1">
+                  <img
+                    width="30"
+                    height="30"
+                    src="https://img.icons8.com/ios-filled/50/circled-m.png"
+                    alt="circled-m"
+                  />
+                </div>
+                <div class="ms-1 mt-1">
+                  <img
+                    width="30"
+                    height="30"
+                    src="https://img.icons8.com/doodle/48/youtube--v1.png"
+                    alt="youtube--v1"
+                  />
+                </div>
+                <div class="ms-1 mt-1">
+                  <img
+                    width="30"
+                    height="30"
+                    src="https://img.icons8.com/bubbles/50/instagram-new--v2.png"
+                    alt="instagram-new--v2"
+                  />
+                </div>
+                <div class="ms-1 mt-1">
+                  <img
+                    width="30"
+                    height="30"
+                    src="https://img.icons8.com/doodle/48/dribbble-old-logo.png"
+                    alt="dribbble-old-logo"
+                  />
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
+      <div class="h-10"></div>
+      <!-- ! Certificates  -->
+      <div class="flex justify-center flex-wrap">
+        <div class="flex">
+          <!-- ? 1 Pair -->
+          <div class="ms-0 mt-5 md:ms-10">
+            <img
+              height="85"
+              width="85"
+              src="./../images/last-images/clutch.png"
+              alt=""
+            />
+          </div>
+          <div class="ms-10 mt-5 md:ms-10">
+            <img
+              height="85"
+              width="85"
+              src="./../images/last-images/dmca.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <!-- ? 2 pair -->
+        <div class="flex">
+          <div class="ms-10 mt-5 md:ms-10">
+            <img
+              height="85"
+              width="85"
+              src="./../images/last-images/goodfirms.png"
+              alt=""
+            />
+          </div>
+          <div class="ms-10 mt-5 md:ms-10">
+            <img
+              height="85"
+              width="85"
+              src="./../images/last-images/softwareworld.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <!-- ? 3 Pair  -->
+        <div class="flex">
+          <div class="ms-10 mt-5 md:ms-10">
+            <img
+              height="85"
+              width="85"
+              src="./../images/last-images/top-app-developers.png"
+              alt=""
+            />
+          </div>
+          <div class="ms-10 mt-5 md:ms-10">
+            <img
+              height="85"
+              width="85"
+              src="./../images/last-images/top-developers-big.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="h-10"></div>
+      <div class="text-center bg-slate-900">
+        <p class="text-slate-400 text-sm">
+          © Copyrights 2021, All Rights Reserved by Angular Minds Pvt. Ltd.
+        </p>
+      </div>
     </div>
-    <div class="h-10"></div>
-    <!-- ! Certificates  -->
-    <div class="flex justify-center flex-wrap ">
-         <div class="flex">
-            <!-- ? 1 Pair -->
-            <div class="ms-0 mt-5 md:ms-10 ">
-                <img height="85" width="85" src="./../images/last-images/clutch.png" alt="">
-            </div>
-            <div class="ms-10 mt-5 md:ms-10 ">
-                <img  height="85" width="85" src="./../images/last-images/dmca.png" alt="">
-            </div>
-         </div>
-         <!-- ? 2 pair -->
-         <div class="flex">
-            <div class="ms-10 mt-5 md:ms-10 ">
-                <img  height="85" width="85" src="./../images/last-images/goodfirms.png" alt="">
-            </div>
-            <div class="ms-10 mt-5 md:ms-10 ">
-                <img  height="85" width="85" src="./../images/last-images/softwareworld.png" alt="">
-            </div>
-         </div>
-         <!-- ? 3 Pair  -->
-         <div class="flex">
-            <div class="ms-10 mt-5 md:ms-10">
-                <img  height="85" width="85" src="./../images/last-images/top-app-developers.png" alt="">
-            </div>
-            <div class="ms-10 mt-5 md:ms-10">
-                <img  height="85" width="85" src="./../images/last-images/top-developers-big.png" alt="">
-            </div>
-         </div>
-    </div>
-    <div class="h-10 "></div>
-    <div class="text-center bg-slate-900">
-        <p class="text-slate-400 text-sm">© Copyrights 2021, All Rights Reserved by Angular Minds Pvt. Ltd.</p>
-    </div>
-</div>
-<!-- * BLACK FOOTER -->
-
-</body>
+    <!-- * BLACK FOOTER -->
+  </body>
 </html>
